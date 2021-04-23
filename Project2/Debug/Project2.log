@@ -1,0 +1,14 @@
+﻿  Project2.cpp
+D:\DevFile\DNN\Project2\Neuron.h(271,1): error C2039: 'SetNeuronCount': 'Layer<T3>'의 멤버가 아닙니다.
+          with
+          [
+              T3=float
+          ]
+D:\DevFile\DNN\Project2\Neuron.h(350): message : 'Layer<T3>' 선언을 참조하십시오.
+          with
+          [
+              T3=float
+          ]
+D:\DevFile\DNN\Project2\Neuron.h(261): message : 클래스 템플릿 멤버 함수 'void neuralNetwork<float>::SetNeuronCounts(List<int> *)'을(를) 컴파일하는 중입니다.
+D:\DevFile\DNN\Project2\Neuron.h(185): message : 컴파일되는 함수 템플릿 인스턴스화 'void neuralNetwork<float>::SetNeuronCounts(List<int> *)'에 대한 참조를 확인하세요.
+D:\DevFile\DNN\Project2\Project2.cpp(29): message : 컴파일되는 클래스 템플릿 인스턴스화 'neuralNetwork<float>'에 대한 참조를 확인하세요.
