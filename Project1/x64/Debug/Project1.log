@@ -1,6 +1,0 @@
-﻿  main.cpp
-D:\DevFile\DNN\Project1\main.cpp(12,1): error C2440: '<function-style-cast>': 'initializer list'에서 'std::thread'(으)로 변환할 수 없습니다.
-D:\DevFile\DNN\Project1\main.cpp(12,1): message : 소스 형식을 가져올 수 있는 생성자가 없거나 생성자 오버로드 확인이 모호합니다.
-D:\DevFile\DNN\Project1\main.cpp(9): message : 클래스 템플릿 멤버 함수 'void bar<int>::foo(void)'을(를) 컴파일하는 중입니다.
-D:\DevFile\DNN\Project1\main.cpp(24): message : 컴파일되는 함수 템플릿 인스턴스화 'void bar<int>::foo(void)'에 대한 참조를 확인하세요.
-D:\DevFile\DNN\Project1\main.cpp(23): message : 컴파일되는 클래스 템플릿 인스턴스화 'bar<int>'에 대한 참조를 확인하세요.

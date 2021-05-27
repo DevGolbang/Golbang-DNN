@@ -1,5 +1,0 @@
-﻿  ArrayVersionDNN1.cpp
-D:\DevFile\DNN\ArrayVersionDNN1\ArrayNeuron.h(276,1): error C2563: 정식 매개 변수 목록과 일치하지 않는 항목이 있습니다.
-D:\DevFile\DNN\ArrayVersionDNN1\ArrayNeuron.h(276): message : 컴파일되는 클래스 템플릿 인스턴스화 'neuralNetwork<T3>'에 대한 참조를 확인하세요.
-D:\DevFile\DNN\ArrayVersionDNN1\ArrayNeuron.h(276,1): error C2568: '<': 함수 오버로드를 확인할 수 없습니다.
-D:\DevFile\DNN\ArrayVersionDNN1\ArrayNeuron.h(276,1): message : 'iterator_traits<_Iter>::difference_type std::count(const _InIt,const _InIt,const _Ty &)'일 수 있습니다.
