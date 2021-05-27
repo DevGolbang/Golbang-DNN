@@ -1,35 +1,32 @@
-﻿#include "Neuron.h"
+﻿#include <iostream>
+#include <future>
 
-int main() {
-	List<int> nodeCount;
-	nodeCount.InsertLast(2);
-	nodeCount.InsertLast(2);
-	nodeCount.InsertLast(2);
-	nodeCount.InsertLast(2);
-	List<float(*)(float x)> ActFunc;
-	ActFunc.InsertLast(LinearFunc);
-	ActFunc.InsertLast(LinearFunc);
-	ActFunc.InsertLast(LinearFunc);
-	ActFunc.InsertLast(LinearFunc);
-	List<float> bias;
-	bias.InsertLast(0.0f);
-	bias.InsertLast(0.0f);
-	bias.InsertLast(0.0f);
-	bias.InsertLast(0.0f);
-	List<float> input;
-	input.InsertLast(1.0f);
-	input.InsertLast(1.0f);
-	input.InsertLast(1.0f);
-	input.InsertLast(1.0f);
-	List<float> answer;
-	answer.InsertLast(1.0f);
-	answer.InsertLast(1.0f);
-	answer.InsertLast(1.0f);
-	answer.InsertLast(1.0f);
-	neuralNetwork<float> Net(&nodeCount, &bias, &ActFunc, &answer, &input, 3, 0.1f, 4);
-	Net.FeedForward();
-	Net.PrintAllLayer();
-
-	return 0;
+void for_print_char(char c) {
+    for (int i = 0; i < 70; i++)
+        printf("%c번 Thread : %d\n", c, i);
 }
-
+void for_print_int(int c) {
+    for (int i = 0; i < 70; i++)
+        printf("%d번 Thread : %d\n", c, i);
+}
+int main() {
+    //std::future<void> a = std::async(for_print_char, 'a');
+    //a.wait();
+    //std::future<void> b = std::async(for_print_char, 'b');
+    //b.wait();
+    //std::future<void> c = std::async(for_print_char, 'c');
+    //c.wait();
+    //
+    
+    std::future<void> d[8];
+    for (int i = 0; i < 8; i++) {
+        d[i] = std::async(for_print_int, i);
+        //d[i].wait();
+    }
+    for (int i = 0; i < 8; i++) {
+       // d[i].wait();
+    }
+    printf("안녕하심꽈");
+    //b.get();
+    return 0;
+}

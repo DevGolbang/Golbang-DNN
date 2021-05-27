@@ -62,7 +62,7 @@ template <typename T2>
 class Layer {
 public:
 	Layer() {
-
+		neurons = new Neuron
 	}
 	~Layer() {
 
@@ -179,6 +179,7 @@ public:
 		AnswerLayer->neurons = new Neuron<T3>[count];
 	}
 	void SetInputLayer(T3 input[]) {
+
 		InputLayer->InitNeuron(count);
 		InputLayer->pNextLayer = &HiddenLayers[0];
 		for (int i = 0; i < count; i++) {

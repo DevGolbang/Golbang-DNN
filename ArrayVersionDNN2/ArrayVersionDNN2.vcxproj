@@ -150,7 +150,14 @@
     <ClCompile Include="ArrayVersionDNN2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArrayNeuron.h" />
+    <ClInclude Include="ActivationFunctions.h" />
+    <ClInclude Include="cuda_parrellel.h" />
+    <ClInclude Include="LayerSet.h" />
+    <ClInclude Include="memory_block_list.h" />
+    <ClInclude Include="NeuralNetwork.h" />
+    <ClInclude Include="NeuronSet.h" />
+    <ClInclude Include="ParrellelFor.h" />
+    <ClInclude Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

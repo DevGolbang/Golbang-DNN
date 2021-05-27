@@ -22,8 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{7D8F7699-32B6-41A3-82AC-A7EF1D1A3524}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Project2</RootNamespace>
+    <RootNamespace>OptimizationTestHaness</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>OptimizationTestHaness</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
