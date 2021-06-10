@@ -18,3 +18,5 @@
 2. CNN 할 수 있게 개조 -> RNN(LTMS)도 추가
 3. Input 제어하는 모듈 추가(.csv, .png 파일 파싱) -> .png사용시 자동으로 CNN 변환
 4. CUDA Version 시작(CUDA Environment 구축 및 예제 테스트(학습))
+
+![ANN](https://user-images.githubusercontent.com/24998577/121584381-5d911500-ca6c-11eb-9998-95b08652a5af.jpg)
